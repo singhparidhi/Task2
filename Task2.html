@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .card {
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    .card-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    
+    .card-content {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2 class="card-title">Card 1</h2>
+      <img class="card-image" src="akshay-kumar.webp" alt="akshay-kumar">
+      <p class="card-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Card 2</h2>
+      <img class="card-image" src="SalmanKhan.webp" alt="SalmanKhan">
+      <p class="card-content">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </div>
+    <div class="card">
+      <h2 class="card-title">Card 3</h2>
+      <img class="card-image" src="ShahRukh Khan" alt="Card 3 Image">
+      <p class="card-content">Fusce a aliquam lectus, in aliquet libero.</p>
+    </div>
+  </div>
+</body>
+</html>
